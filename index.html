@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GET BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Laboratorio 2</title>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <nav style="width: 100%; z-index: 2; position: fixed; top: 0;" class="navbar border-success border navbar-expand-md navbar-dark bg-dark">
+
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Laboratorio 2</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-md-flex justify-content-md-end px-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ejercicio1">Ejercicio #1</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ejercicio2">Ejercicio #2</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ejercicio3">Ejercicio #3</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ejercicio4">Ejercicio #4</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ejercicio5">Ejercicio #5</a>
+              </li>   
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ------------- -->
+            
+      <!-- Espacio -->
+      <div style="height: 50px;" class="row"></div>
+      <!-- EJERCICIO 1 -->
+
+      <div class="mt-5 mb-5 container border border-success">
+        <h2 id="ejercicio1">Exercise 1:</h2>
+        <div class="row">
+          <!-- Formulario de ingreso de datos -->
+          <div class="col">
+            <h4 class="text-center">Login</h4>
+            <form>
+              <div class="form-group pt-3 text-center">
+                <input id="user" type="text" placeholder="User">
+              </div>
+              <div class="form-group pt-3 text-center">
+                <input id="password" type="password" placeholder="Password">
+              </div>
+              <div class="form-group mt-3 mb-3 text-center">
+                <button type="button" id="button_singin" class="btn btn-success">Sing In</button>
+              </div>
+            </form>
+          </div>
+          <!-- Mostrar datos  -->
+          <div class="col">
+            <h4 class="text-center">User Data</h4>
+            <!-- datos del usuario -->
+            <div id="datos_usuario" class="mt-3 container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------ -->
+
+      <!-- EJERCICIO 2 -->
+<!-- d-flex flex-column  -->
+      <div class="container border border-success mb-5">
+        <h2 id="ejercicio2">Exercise 2 </h2>
+        <div class="row">
+          <div class="col mb-3">
+            <h4 class="text-center">Calculator</h4>
+            <div class="form-group text-center mt-3">
+              <input id="first"  type="number" placeholder="first number">
+            </div>
+
+            <div class="form-group text-center mt-3">
+              <input id="second"  type="number" placeholder="Second number">
+            </div>
+
+            <div class="form-group text-center mt-3">
+              <input id="thirt"  type="number" placeholder="Third number">
+            </div>
+
+            <div class="form-group text-center mt-3">
+              <input id="fourth"  type="number" placeholder="Fourth number">
+            </div>
+          </div>
+          <div class="col">
+            <h4 class="text-center">Results</h4>
+            <p><b>Addition: </b><span id="result_adition" class="text-primary h5"> </span></p>
+            <p><b>Product: </b><span id="result_product" class="text-primary h5"> </span></p>
+          </div>
+        </div>
+        <div class="fom-group text-center">
+          <button class="btn btn-success mb-3" id="button_calculate">Calculate</button>
+        </div>
+      </div>
+      <!-- ---------- -->
+
+
+      <!-- EJERCICIO 3 -->
+      <div class="container  border border-success mb-5">
+        <h2 id="ejercicio3">Exercise 3</h2>
+        <div class="row">
+          <div class="col">
+            <div class="form-group mb-3">
+              <input type="number"id="ex3_first_number" placeholder="First number">
+            </div>
+          
+          <div class="form-group mb-3">
+            <input type="number"id="ex3_second_number" placeholder="Second number">
+          </div>
+          <div class="form-group mb-3 text-center">
+            <button id="btn_calculate" class="btn btn-success">Calculate</button>
+          </div>
+        </div>
+
+          <div class="col">
+            <h4 class="text-center">Results</h4>
+            <p id="operation1" class="text-primary h5"> </span></p>
+            <p id="operation2" class="text-primary h5"> </span></p>
+          </div>
+        </div>
+      </div>
+      <!-- EXERCICE 4 -->
+      <div class="container border border-success">
+        <h2 id="ejercicio4">Exercise 4</h2>
+        <div class="row">
+          <div class="col">
+
+            <div class="form-group mb-3">
+              <input id="ex4_first_note" type="number" placeholder="First Note">
+            </div>
+
+            <div class="form-group mb-3">
+              <input id="ex4_second_note" type="number" placeholder="Second Note">
+            </div>
+
+            <div class="form-group mb-3">
+              <input id="ex4_third_note" type="number" placeholder="Third Note">
+            </div>
+
+            <div class="form-group mb-3 text-center">
+              <button id="ex4_btn_calculate" class="btn btn-success">Calculate</button>
+            </div>
+          </div>
+
+          <div class="col">
+              <h4 class="text-center">Averange</h4>
+              <p id="ex4_averange" class="text-primary h5"> </span></p>
+              <p id="ex4_message" class="text-primary h5"> </span></p>
+          </div>
+        </div>
+      </div>
+      <!-- ---------- -->
+      <!-- EXERCISE 5 -->
+      <div class="container mt-5 mb-5 border border-success">
+        <h2 id="ejercicio5">Exercise 5</h2>
+        <div class="row">
+            <div class="col">
+
+              <div class="form-group mb-3">
+                <input id="ex5_first_number" type="number" placeholder="First Note">
+              </div>
+
+              <div class="form-group mb-3">
+                <input id="ex5_second_number" type="number" placeholder="Second Note">
+              </div>
+
+              <div class="form-group mb-3">
+                <input id="ex5_third_number" type="number" placeholder="Third Note">
+              </div>
+
+              <div class="form-group mb-3 text-center">
+                <button id="ex5_btn_calculate" class="btn btn-success">Calculate</button>
+              </div>
+          </div>
+
+          <div class="col">
+            <h4 class="text-center">Results</h4>
+            <p id="ex5_list_numbers" class="h5"></p>
+            <p id="ex5_number_larger" class="h5"> </span></p>
+            <p id="ex5_number_short" class="h5"> </span></p>
+          </div>
+        </div>
+      </div>
+      <!-- SCRIPTS -->
+    <script src="./js/exercise1.js"></script>
+    <script src="./js/exercise2.js"></script>
+    <script src="./js/exercise3.js"></script>
+    <script src="./js/exercise4.js"></script>
+    <script src="./js/exercise5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
